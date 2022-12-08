@@ -1,10 +1,15 @@
 import Head from 'next/head'
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
-import { DiMongodb, DiPython, DiDjango } from "react-icons/di";
+import { DiMongodb, DiPython, DiDjango,DiPostgresql } from "react-icons/di";
 import { FaReact, FaHtml5, FaJsSquare, FaCss3Alt } from "react-icons/fa"
 import Image from "next/image";
 import Me from '../public/IMG_0068.jpg'
+import Airbnb from '../public/Airbnb.jpg'
+import Benefi from '../public/benefi.png'
+import Card_game from '../public/Card_game.png'
+import Smack from '../public/Smack.png'
+
 
 export default function Home() {
   return (
@@ -15,13 +20,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-white px-10'>
+      <main className='bg-white px-10 mx-auto'>
         <section className='min-h-screen'>
-          <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl'>Portfolio</h1>
-            <ul className='flex items-center'>
+          <nav className='py-10 mb-12 flex justify-between text-sm md:text-2xl md:mx-16'>
+            <a  href='#contact'>Contact Me</a>
+            <a  href='#about'>About Me</a>
+            <a  href='#projects'>Projects</a>
+            <a  href='#skills'>Skillset</a>
+            
+            <ul className='flex items-center text-sm md:text-2xl'>
               <li>
-                <BsFillMoonStarsFill className='cursor-pointer text-2xl' />
+                <BsFillMoonStarsFill className='cursor-pointer' />
               </li>
               <li><a className='bg-cyan-500 text-white px-4 py-2 rounded ml-8' href="#">Resume</a></li>
             </ul>
@@ -30,18 +39,15 @@ export default function Home() {
             <Image src={Me} alt='black developer' layout='fill' objectFit='cover' className='rounded-full' />
 
           </div>
-          <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Alexis Herrera</h2>
+          <div className='text-center p-10' id='about'>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium' >Alexis Herrera</h2>
             <h3 className='text-2xl py-2'>Father | Veteran | Developer</h3>
             <p className='text-md py-5 leading-8 text-gray-800'>Highly adaptable and detail-oriented security professional turned software engineer well-versed in analyzing user needs and developing software to meet diverse needs. Innovative and technically-astute facilitator of solutions accustomed to working with global teams. Enthusiastic and self motivated learner that is committed to personal development and keeping up with industry trends.</p>
           </div>
-          <div className='text-5xl flex justify-center gap-16'>
-            <a href='https://www.linkedin.com/in/alexis-herrera003/'><AiFillLinkedin /> </a>
-            <a href='https://github.com/aeherrer71'><AiOutlineGithub /> </a>
-          </div>
+         
         </section>
         <section>
-          <h1 className='text-5xl font-medium text-center'>Skills</h1>
+          <h1 className='text-5xl font-medium text-center' id="skills">Skills</h1>
           <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5'>
             <div className='text-center shadow-2xl p-10 rounded-xl my-10 '>
               <FaReact className='text-5xl mx-auto' />
@@ -78,8 +84,47 @@ export default function Home() {
               <h3 className='py-1 text-lg font-medium '>Django</h3>
               <p className='text-gray-800 py-1'>Django is a free and open-source, Python-based web framework that follows the model–template–views architectural pattern.</p>
             </div>
+            <div className='text-center shadow-2xl p-10 rounded-xl my-10 '>
+              <DiPostgresql className='text-5xl mx-auto' />
+              <h3 className='py-1 text-lg font-medium '>PostgreSQL</h3>
+              <p className='text-gray-800 py-1'> Open source relational database that supports both SQL (relational) and JSON (non-relational) querying. It is a highly stable database management system</p>
+            </div>
           </div>
         </section>
+          <h1 className='text-5xl font-medium text-center pb-10' id="projects">Projects</h1>
+        <section>
+          <div className="container mx-auto space-y-2 lg:space-y-0 lg:gap-2 lg:grid md:grid-cols-2">
+            <div >
+              <Image
+                className="w-full pt-10 my-6 rounded hover:shadow-2xl flex-1"
+                src={Smack}
+                alt="project"
+              />
+            </div>
+            <div>
+              <Image className="w-full rounded hover:shadow-2xl" src={Airbnb} alt="project"/>
+            </div>
+            <div>
+              <Image className="w-full rounded hover:shadow-2xl" src={Benefi} alt="project"/>
+            </div>
+            <div>
+              <Image
+                className="w-full rounded hover:shadow-2xl"
+                alt="project"
+                src={Card_game}
+              />
+            </div>
+            
+          </div>
+        </section>
+        <footer className='py-14 '>
+          <h1 className='text-5xl font-medium text-center' id="contact">Contact Me</h1>
+        <div className='text-5xl flex justify-center gap-16'>
+            <a href='https://www.linkedin.com/in/alexis-herrera003/'><AiFillLinkedin /> </a>
+            <a href='https://github.com/aeherrer71'><AiOutlineGithub /> </a>
+            <h3 className='text-2xl pt-2'>aeherrer71@gmail.com</h3>
+          </div>
+        </footer>
       </main>
 
 
