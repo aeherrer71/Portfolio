@@ -24,7 +24,7 @@ export default function Home() {
 
       <main className='bg-white px-10 mx-auto'>
         <section className='min-h-screen'>
-          <nav className='py-10 mb-12 flex justify-between text-sm md:text-2xl md:mx-16'>
+          <nav className='py-10 mb-12 flex justify-between text-sm md:text-2xl md:mx-16 bg'>
             <a  href='#contact'>Contact Me</a>
             <a  href='#about'>About Me</a>
             <a  href='#projects'>Projects</a>
@@ -97,7 +97,7 @@ export default function Home() {
         <section>
           <div className="container mx-auto space-y-2 lg:space-y-0 lg:gap-2 lg:grid md:grid-cols-2">
             <div >
-              <a href='https://genuine-marshmallow-56fd7d.netlify.app/home' target="_blank">
+              <a href='https://genuine-marshmallow-56fd7d.netlify.app/home' >
               <Image
                 className="w-full pt-10 my-6 rounded hover:shadow-2xl flex-1"
                 src={Smack}
@@ -108,11 +108,11 @@ export default function Home() {
               <Image className="w-full rounded hover:shadow-2xl" src={Airbnb} alt="project"/>
             </div>
             <div>
-            <a href='https://splendorous-cucurucho-94443d.netlify.app/' target="_blank">
+            <a href='https://splendorous-cucurucho-94443d.netlify.app/' >
               <Image className="w-full rounded hover:shadow-2xl" src={Benefi} alt="project"/></a>
             </div>
             <div>
-            <a href='https://prismatic-tapioca-fa0a95.netlify.app/' target="_blank">
+            <a href='https://prismatic-tapioca-fa0a95.netlify.app/' >
               <Image
                 className="w-full rounded hover:shadow-2xl"
                 alt="project"
@@ -126,10 +126,10 @@ export default function Home() {
           <h1 className='text-5xl font-medium text-center' id="contact">Contact Me</h1>
           <div className='text-5xl justify-center gap-16'>
             <ul className='flex justify-center gap-5'>
-            <li><a href='https://www.linkedin.com/in/alexis-herrera003/'><AiFillLinkedin target="_blank"/> </a></li>
-            <li><a href='https://github.com/aeherrer71'><AiOutlineGithub target="_blank"/> </a></li>
-            <li><a href='mailto:aeherrer71@gmail.com'><AiOutlineMail target="_blank"/></a></li>
-            <li><a href='https://wa.me/14694509276' target="_blank"><BsWhatsapp/></a></li>
+            <li><a href='https://www.linkedin.com/in/alexis-herrera003/'><AiFillLinkedin /> </a></li>
+            <li><a href='https://github.com/aeherrer71'><AiOutlineGithub /> </a></li>
+            <li><a href='mailto:aeherrer71@gmail.com'><AiOutlineMail /></a></li>
+            <li><a href='https://wa.me/14694509276' ><BsWhatsapp/></a></li>
             </ul>
           </div>
         </footer>
