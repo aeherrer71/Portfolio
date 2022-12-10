@@ -4,7 +4,6 @@ import { AiOutlineGithub, AiFillLinkedin, AiOutlineMail} from "react-icons/ai";
 import { DiMongodb, DiPython, DiDjango,DiPostgresql } from "react-icons/di";
 import { FaReact, FaHtml5, FaJsSquare, FaCss3Alt } from "react-icons/fa"
 import { BsWhatsapp } from "react-icons/bs"
-
 import Image from "next/image";
 import Me from '../public/IMG_0068.jpg'
 import Airbnb from '../public/Airbnb.jpg'
@@ -24,26 +23,26 @@ export default function Home() {
 
       <main className='bg-white px-10 mx-auto'>
         <section className='min-h-screen'>
-          <nav className='py-10 mb-12 flex justify-between text-sm md:text-2xl md:mx-16 bg'>
+          <nav className='pt-10 flex justify-between text-xs md:text-2xl md:mx-16 md:mb-10'>
             <a  href='#contact'>Contact Me</a>
             <a  href='#about'>About Me</a>
             <a  href='#projects'>Projects</a>
             <a  href='#skills'>Skillset</a>
             
             <ul className='flex items-center text-sm md:text-2xl'>
-              <li>
+              {/* <li>
                 <BsFillMoonStarsFill className='cursor-pointer' />
-              </li>
-              <li><a className='bg-cyan-500 text-white px-4 py-2 rounded ml-8' href="#">Resume</a></li>
+              </li> */}
+              <li><a className='bg-cyan-500 text-white px-1 py-1 rounded ml-8' href="Resume.pdf" download="Resume.pdf">Resume</a></li>
             </ul>
           </nav>
-          <div className='relative w-80 h-80 mx-auto mt-20'>
+          <div className='relative w-80 h-80 mx-auto '>
             <Image src={Me} alt='black developer' layout='fill' objectFit='cover' className='rounded-full' />
 
           </div>
           <div className='text-center p-10' id='about'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium' >Alexis Herrera</h2>
-            <h3 className='text-2xl py-2'>Father | Veteran | Developer</h3>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium ' >Alexis Herrera</h2>
+            <h3 className=' md:text-2xl py-2'>Father | Veteran | Developer</h3>
             <p className='text-md py-5 leading-8 text-gray-800'>Highly adaptable and detail-oriented security professional turned software engineer well-versed in analyzing user needs and developing software to meet diverse needs. Innovative and technically-astute facilitator of solutions accustomed to working with global teams. Enthusiastic and self motivated learner that is committed to personal development and keeping up with industry trends.</p>
           </div>
          
